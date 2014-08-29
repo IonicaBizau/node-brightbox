@@ -1,0 +1,13 @@
+{
+  "name": "node-brightbox",
+  "version": "0.0.1",
+  "description": "Brightbox API NodeJS client",
+  "main": "index.js",
+  "keywords": [
+    "brightbox",
+    "api",
+    "node"
+  ],
+  "author": "Ionică Bizău <bbizauionica@gmail.com>",
+  "license": "MIT"
+}
