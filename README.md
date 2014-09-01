@@ -5,7 +5,7 @@ Brightbox API NodeJS client
 Run the following commands to download and install the application:
 
 ```sh
-$ {repository.type} clone {repository.url} brightbox
+$ git clone https://github.com/IonicaBizau/node-brightbox.git brightbox
 $ cd brightbox
 $ npm install
 ```
