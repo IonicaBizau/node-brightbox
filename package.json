@@ -9,5 +9,23 @@
     "node"
   ],
   "author": "Ionică Bizău <bbizauionica@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "request": "^2.40.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IonicaBizau/node-brightbox.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IonicaBizau/node-brightbox/issues"
+  },
+  "homepage": "https://github.com/IonicaBizau/node-brightbox"
 }
