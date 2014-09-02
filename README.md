@@ -10,6 +10,34 @@ $ cd brightbox
 $ npm install
 ```
 
+or from NPM:
+
+```sh
+$ npm install brightbox
+```
+
+## Example
+
+```js
+// Require the module
+var Brightbox = require("brightbox");
+
+// Add auth object
+Brightbox.options({
+    auth: new Brightbox.auth(YOUR_CLIENT_ID, YOUR_CLIENT_SECRET)
+});
+
+// List servers
+Brightbox.servers.list({}, function (err, servers) {
+    console.log(err || "You have " + servers.length + " cloud servers.");
+});
+
+// List accounts
+Brightbox.accounts.list({}, function (err, accounts) {
+    console.log(err || accounts);
+});
+```
+
 ## How to contribute
 
 1. File an issue in the repository, using the bug tracker, describing the
