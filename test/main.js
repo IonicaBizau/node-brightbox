@@ -1,7 +1,10 @@
-var Brightbox = require("../lib/brightboxapis");
-var Credentials = require("./credentials");
-var Auth = new Brightbox.auth(Credentials.clientId, Credentials.clientSecret);
-Brightbox.options({auth: Auth})
+var Brightbox = require("../lib/brightboxapis")
+  , Credentials = require("./credentials")
+  ;
+
+Brightbox.options({
+    auth: new Brightbox.auth(Credentials.clientId, Credentials.clientSecret)
+});
 
 Brightbox.servers.list({}, function (err, servers) {
     console.log(err || "You have " + servers.length + " cloud servers.");
