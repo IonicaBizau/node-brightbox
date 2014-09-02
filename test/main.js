@@ -6,3 +6,7 @@ Brightbox.options({auth: Auth})
 Brightbox.servers.list({}, function (err, servers) {
     console.log(err || "You have " + servers.length + " cloud servers.");
 });
+
+Brightbox.accounts.list({}, function (err, accounts) {
+    console.log(err || accounts);
+});
