@@ -6,10 +6,16 @@ Brightbox.options({
     auth: new Brightbox.auth(Credentials.clientId, Credentials.clientSecret)
 });
 
-Brightbox.servers.list({}, function (err, servers) {
-    console.log(err || "You have " + servers.length + " cloud servers.");
+// Users
+console.log("Fetching users.");
+Brightbox.users.list({}, function (err, users) {
+    console.log(users);
+    console.log("Fetching " + users[0].name);
+    Brightbox.users.get({id: users[0].id}, function (err, user) {
+        console.log(user);
+    });
 });
 
-Brightbox.accounts.list({}, function (err, accounts) {
-    console.log(err || accounts);
+Brightbox.server_types.list({}, function (err, server_types) {
+    console.log(server_types);
 });
