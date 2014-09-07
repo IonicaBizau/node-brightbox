@@ -1,6 +1,6 @@
 {
   "name": "brightbox",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Brightbox API NodeJS client",
   "main": "lib/index.js",
   "keywords": [
