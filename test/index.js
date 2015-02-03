@@ -1,5 +1,5 @@
 var Brightbox = require("../lib/brightboxapis")
-  , Credentials = require("./credentials")
+  , Credentials = require(__dirname + "/credentials")
   ;
 
 Brightbox.options({
