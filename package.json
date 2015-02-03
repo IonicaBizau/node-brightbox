@@ -11,14 +11,14 @@
   "author": "Ionică Bizău <bbizauionica@gmail.com>",
   "license": "MIT",
   "directories": {
-    "test": "node test"
+    "test": "test"
   },
   "dependencies": {
     "request": "^2.40.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test"
   },
   "repository": {
     "type": "git",
