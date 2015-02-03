@@ -1,17 +1,9 @@
-# brightbox
-Brightbox API NodeJS client
+![](http://i.imgur.com/sfG2GW9.png)
+
+# Brightbox
+A Node.JS module, which provides an object oriented wrapper for the Brightbox API.
 
 ## Installation
-Run the following commands to download and install the application:
-
-```sh
-$ git clone https://github.com/IonicaBizau/node-brightbox.git brightbox
-$ cd brightbox
-$ npm install
-```
-
-or from NPM:
-
 ```sh
 $ npm install brightbox
 ```
