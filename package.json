@@ -1,6 +1,6 @@
 {
   "name": "brightbox",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Brightbox API NodeJS client",
   "main": "lib/index.js",
   "keywords": [
@@ -11,7 +11,7 @@
   "author": "Ionică Bizău <bbizauionica@gmail.com>",
   "license": "MIT",
   "directories": {
-    "test": "test"
+    "test": "node test"
   },
   "dependencies": {
     "request": "^2.40.0"
