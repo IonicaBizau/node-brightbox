@@ -1,7 +1,7 @@
 {
   "name": "brightbox",
   "version": "1.0.0",
-  "description": "Brightbox API NodeJS client",
+  "description": "A Node.JS module, which provides an object oriented wrapper for the Brightbox API.",
   "main": "lib/index.js",
   "keywords": [
     "brightbox",
