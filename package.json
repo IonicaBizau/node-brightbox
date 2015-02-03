@@ -14,7 +14,8 @@
     "test": "test"
   },
   "dependencies": {
-    "request": "^2.40.0"
+    "request": "^2.40.0",
+    "lazy-api": "1.1.0"
   },
   "devDependencies": {},
   "scripts": {
