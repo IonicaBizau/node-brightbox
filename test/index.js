@@ -1,4 +1,4 @@
-var Brightbox = require("../lib/brightboxapis")
+var Brightbox = require("../lib/")
   , Credentials = require(__dirname + "/credentials")
   ;
 
