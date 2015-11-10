@@ -1,6 +1,6 @@
 {
   "name": "brightbox",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A Node.JS module, which provides an object oriented wrapper for the Brightbox API.",
   "main": "lib/index.js",
   "keywords": [
@@ -8,8 +8,8 @@
     "api",
     "node"
   ],
-  "author": "Ionică Bizău <bbizauionica@gmail.com>",
-  "license": "MIT",
+  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "license": "KINDLY",
   "directories": {
     "test": "test"
   },
@@ -28,5 +28,240 @@
   "bugs": {
     "url": "https://github.com/IonicaBizau/node-brightbox/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/node-brightbox"
+  "homepage": "https://github.com/IonicaBizau/node-brightbox",
+  "blah": {
+    "h_img": "http://i.imgur.com/sfG2GW9.png",
+    "documentation": [
+      {
+        "h2": "APIs"
+      },
+      {
+        "p": "Below there are the available APIs you can access with this module. For documentation, please consider the [Brightbox API Documentation 1.0.0](https://api.gb1.brightbox.com/1.0/)."
+      },
+      {
+        "p": "For questions, you can always [open a new issue](/issues/new)."
+      },
+      {
+        "ul": [
+          [
+            "`accounts`",
+            {
+              "ul": [
+                "`list`",
+                "`get`",
+                "`update`",
+                "`resetFtpPass`"
+              ]
+            }
+          ],
+          [
+            "`api_clients`",
+            {
+              "ul": [
+                "`list`",
+                "`create`",
+                "`get`",
+                "`update`",
+                "`delete`",
+                "`resetSecret`"
+              ]
+            }
+          ],
+          [
+            "`cloud_ips`",
+            {
+              "ul": [
+                "`list`",
+                "`create`",
+                "`get`",
+                "`update`",
+                "`delete`",
+                "`map`",
+                "`unmap`"
+              ]
+            }
+          ],
+          [
+            "`collaborations`",
+            {
+              "ul": [
+                "`list`",
+                "`create`",
+                "`get`",
+                "`delete`"
+              ]
+            }
+          ],
+          [
+            "`database_servers`",
+            {
+              "ul": [
+                "`list`",
+                "`create`",
+                "`get`",
+                "`update`",
+                "`delete`",
+                "`snapshot`",
+                "`reset_password`",
+                "`lock_resource`"
+              ]
+            }
+          ],
+          [
+            "`database_snapshots`",
+            {
+              "ul": [
+                "`list`",
+                "`get`",
+                "`update`",
+                "`delete`",
+                "`snapshot`",
+                "`lock_resource`",
+                "`unlock_resource`"
+              ]
+            }
+          ],
+          [
+            "`database_types`",
+            {
+              "ul": [
+                "`list`",
+                "`get`"
+              ]
+            }
+          ],
+          [
+            "`firewall_policies`",
+            {
+              "ul": [
+                "`list`",
+                "`create`",
+                "`get`",
+                "`apply_to`",
+                "`remove`",
+                "`delete`"
+              ]
+            }
+          ],
+          [
+            "`firewall_rules`",
+            {
+              "ul": [
+                "`create`",
+                "`get`",
+                "`update`",
+                "`delete`"
+              ]
+            }
+          ],
+          [
+            "`images`",
+            {
+              "ul": [
+                "`list`",
+                "`create`",
+                "`get`",
+                "`update`",
+                "`delete`",
+                "`lock_resource`",
+                "`unlock_resource`"
+              ]
+            }
+          ],
+          [
+            "`load_balancers`",
+            {
+              "ul": [
+                "`list`",
+                "`create`",
+                "`get`",
+                "`update`",
+                "`add_nodes`",
+                "`remove_nodes`",
+                "`add_listeners`",
+                "`remove_listeners`",
+                "`lock_resource`",
+                "`unlock_resource`"
+              ]
+            }
+          ],
+          [
+            "`server_groups`",
+            {
+              "ul": [
+                "`list`",
+                "`create`",
+                "`get`",
+                "`update`",
+                "`add_servers`",
+                "`remove_servers`",
+                "`move_servers`",
+                "`delete`"
+              ]
+            }
+          ],
+          [
+            "`server_types`",
+            {
+              "ul": [
+                "`list`",
+                "`get`"
+              ]
+            }
+          ],
+          [
+            "`servers`",
+            {
+              "ul": [
+                "`list`",
+                "`create`",
+                "`get`",
+                "`update`",
+                "`delete`",
+                "`start`",
+                "`stop`",
+                "`reset`",
+                "`shutdown`",
+                "`activate_console`",
+                "`snapshot`",
+                "`lock_resource`",
+                "`unlock_resource`"
+              ]
+            }
+          ],
+          [
+            "`user_collaborations`",
+            {
+              "ul": [
+                "`list`",
+                "`get`",
+                "`accept`",
+                "`reject`",
+                "`delete`"
+              ]
+            }
+          ],
+          [
+            "`users`",
+            {
+              "ul": [
+                "`list`",
+                "`get`",
+                "`update`"
+              ]
+            }
+          ],
+          [
+            "`zones`",
+            {
+              "ul": [
+                "`list`",
+                "`get`"
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  }
 }

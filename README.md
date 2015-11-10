@@ -1,165 +1,245 @@
-![](http://i.imgur.com/sfG2GW9.png)
+[![brightbox](http://i.imgur.com/sfG2GW9.png)](#)
 
-# Brightbox
+# brightbox [![Support this project][donate-now]][paypal-donations]
+
 A Node.JS module, which provides an object oriented wrapper for the Brightbox API.
 
 ## Installation
+
 ```sh
-$ npm install brightbox
+$ npm i brightbox
 ```
 
 ## Example
+
 ```js
-// Require the module
-var Brightbox = require("brightbox");
+var Brightbox = require("brightbox/")
+  , Credentials = require(__dirname + "/credentials")
+  ;
 
-// Add auth object
 Brightbox.options({
-    auth: new Brightbox.auth(YOUR_CLIENT_ID, YOUR_CLIENT_SECRET)
+    auth: new Brightbox.auth(Credentials.clientId, Credentials.clientSecret)
 });
 
-// List servers
-Brightbox.servers.list({}, function (err, servers) {
-    console.log(err || "You have " + servers.length + " cloud servers.");
-});
-
-// List accounts
-Brightbox.accounts.list({}, function (err, accounts) {
-    console.log(err || accounts);
+// Users
+console.log("Fetching users.");
+Brightbox.users.list({}, function (err, users) {
+    console.log(users);
+    console.log("Fetching " + users[0].name);
+    Brightbox.users.get({id: users[0].id}, function (err, user) {
+        console.log(user);
+        console.log("Fetching the server types.");
+        Brightbox.server_types.list({}, function (err, server_types) {
+            console.log(server_types);
+        });
+    });
 });
 ```
 
+## Documentation
+
+### `BrightboxApis(options)`
+Creates a new Brightbox instance.
+
+#### Params
+- **Object** `options`: The options object.
+
+### `options(opts)`
+Sets the global options.
+
+#### Params
+- **Object** `opts`: The options to set.
+
+#### Return
+- **Brightbox** The Brightbox instance.
+
+### `request(opts, callback)`
+Runs requests to the API urls.
+
+#### Params
+- **Object** `opts`: Optional options.
+- **Function** `callback`: The callback function.
+
+#### Return
+- **Brightbox** The Brightbox instance.
+
+### `addAPIs(apis)`
+Adds the API to the instance.
+
+#### Params
+- **Object** `apis`: The APIs to add.
+
 ## APIs
-Below there are the available APIs you can access with this module. For documentation, please
-consider the [Brightbox API Documentation 1.0.0](https://api.gb1.brightbox.com/1.0/).
+
+Below there are the available APIs you can access with this module. For documentation, please consider the [Brightbox API Documentation 1.0.0](https://api.gb1.brightbox.com/1.0/).
 
 For questions, you can always [open a new issue](/issues/new).
 
  - `accounts`
-   - `list`
-   - `get`
-   - `update`
-   - `resetFtpPass`
+    
+     - `list`
+     - `get`
+     - `update`
+     - `resetFtpPass`
+    
  - `api_clients`
-   - `list`
-   - `create`
-   - `get`
-   - `update`
-   - `delete`
-   - `resetSecret`
+    
+     - `list`
+     - `create`
+     - `get`
+     - `update`
+     - `delete`
+     - `resetSecret`
+    
  - `cloud_ips`
-   - `list`
-   - `create`
-   - `get`
-   - `update`
-   - `delete`
-   - `map`
-   - `unmap`
+    
+     - `list`
+     - `create`
+     - `get`
+     - `update`
+     - `delete`
+     - `map`
+     - `unmap`
+    
  - `collaborations`
-   - `list`
-   - `create`
-   - `get`
-   - `delete`
+    
+     - `list`
+     - `create`
+     - `get`
+     - `delete`
+    
  - `database_servers`
-   - `list`
-   - `create`
-   - `get`
-   - `update`
-   - `delete`
-   - `snapshot`
-   - `reset_password`
-   - `lock_resource`
+    
+     - `list`
+     - `create`
+     - `get`
+     - `update`
+     - `delete`
+     - `snapshot`
+     - `reset_password`
+     - `lock_resource`
+    
  - `database_snapshots`
-   - `list`
-   - `get`
-   - `update`
-   - `delete`
-   - `snapshot`
-   - `lock_resource`
-   - `unlock_resource`
+    
+     - `list`
+     - `get`
+     - `update`
+     - `delete`
+     - `snapshot`
+     - `lock_resource`
+     - `unlock_resource`
+    
  - `database_types`
-   - `list`
-   - `get`
+    
+     - `list`
+     - `get`
+    
  - `firewall_policies`
-   - `list`
-   - `create`
-   - `get`
-   - `apply_to`
-   - `remove`
-   - `delete`
+    
+     - `list`
+     - `create`
+     - `get`
+     - `apply_to`
+     - `remove`
+     - `delete`
+    
  - `firewall_rules`
-   - `create`
-   - `get`
-   - `update`
-   - `delete`
+    
+     - `create`
+     - `get`
+     - `update`
+     - `delete`
+    
  - `images`
-   - `list`
-   - `create`
-   - `get`
-   - `update`
-   - `delete`
-   - `lock_resource`
-   - `unlock_resource`
+    
+     - `list`
+     - `create`
+     - `get`
+     - `update`
+     - `delete`
+     - `lock_resource`
+     - `unlock_resource`
+    
  - `load_balancers`
-   - `list`
-   - `create`
-   - `get`
-   - `update`
-   - `add_nodes`
-   - `remove_nodes`
-   - `add_listeners`
-   - `remove_listeners`
-   - `lock_resource`
-   - `unlock_resource`
+    
+     - `list`
+     - `create`
+     - `get`
+     - `update`
+     - `add_nodes`
+     - `remove_nodes`
+     - `add_listeners`
+     - `remove_listeners`
+     - `lock_resource`
+     - `unlock_resource`
+    
  - `server_groups`
-   - `list`
-   - `create`
-   - `get`
-   - `update`
-   - `add_servers`
-   - `remove_servers`
-   - `move_servers`
-   - `delete`
+    
+     - `list`
+     - `create`
+     - `get`
+     - `update`
+     - `add_servers`
+     - `remove_servers`
+     - `move_servers`
+     - `delete`
+    
  - `server_types`
-   - `list`
-   - `get`
+    
+     - `list`
+     - `get`
+    
  - `servers`
-   - `list`
-   - `create`
-   - `get`
-   - `update`
-   - `delete`
-   - `start`
-   - `stop`
-   - `reset`
-   - `shutdown`
-   - `activate_console`
-   - `snapshot`
-   - `lock_resource`
-   - `unlock_resource`
+    
+     - `list`
+     - `create`
+     - `get`
+     - `update`
+     - `delete`
+     - `start`
+     - `stop`
+     - `reset`
+     - `shutdown`
+     - `activate_console`
+     - `snapshot`
+     - `lock_resource`
+     - `unlock_resource`
+    
  - `user_collaborations`
-   - `list`
-   - `get`
-   - `accept`
-   - `reject`
-   - `delete`
+    
+     - `list`
+     - `get`
+     - `accept`
+     - `reject`
+     - `delete`
+    
  - `users`
-   - `list`
-   - `get`
-   - `update`
+    
+     - `list`
+     - `get`
+     - `update`
+    
  - `zones`
-   - `list`
-   - `get`
+    
+     - `list`
+     - `get`
+    
 
 ## How to contribute
-1. File an issue in the repository, using the bug tracker, describing the
-   contribution you'd like to make. This will help us to get you started on the
-   right foot.
-2. Fork the project in your account and create a new branch:
-   `your-great-feature`.
-3. Commit your changes in that branch.
-4. Open a pull request, and reference the initial issue in the pull request
-   message.
+Have an idea? Found a bug? See [how to contribute][contributing].
+
+## Where is this library used?
+If you are using this library in one of your projects, add it in this list. :sparkles:
 
 ## License
-See the [LICENSE](./LICENSE) file.
+
+[KINDLY][license] © [Ionică Bizău][website]
+
+[license]: http://ionicabizau.github.io/kindly-license/?author=Ionic%C4%83%20Biz%C4%83u%20%3Cbizauionica@gmail.com%3E&year=2014
+
+[website]: http://ionicabizau.net
+[paypal-donations]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RVXDDLKKLQRJW
+[donate-now]: http://i.imgur.com/6cMbHOC.png
+
+[contributing]: /CONTRIBUTING.md
+[docs]: /DOCUMENTATION.md
