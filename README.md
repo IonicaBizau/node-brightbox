@@ -1,19 +1,23 @@
+
 [![brightbox](http://i.imgur.com/sfG2GW9.png)](#)
 
 # brightbox [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Version](https://img.shields.io/npm/v/brightbox.svg)](https://www.npmjs.com/package/brightbox) [![Downloads](https://img.shields.io/npm/dt/brightbox.svg)](https://www.npmjs.com/package/brightbox) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
 > A Node.JS module, which provides an object oriented wrapper for the Brightbox API.
 
-## Installation
+## :cloud: Installation
 
 ```sh
 $ npm i --save brightbox
 ```
 
-## Example
+
+## :clipboard: Example
+
+
 
 ```js
-var Brightbox = require("brightbox/")
+var Brightbox = require("../lib/")
   , Credentials = require(__dirname + "/credentials")
   ;
 
@@ -36,7 +40,8 @@ Brightbox.users.list({}, function (err, users) {
 });
 ```
 
-## Documentation
+## :memo: Documentation
+
 
 ### `BrightboxApis(options)`
 Creates a new Brightbox instance.
@@ -69,30 +74,34 @@ Adds the API to the instance.
 #### Params
 - **Object** `apis`: The APIs to add.
 
+
+
 ## APIs
 
 Below there are the available APIs you can access with this module. For documentation, please consider the [Brightbox API Documentation 1.0.0](https://api.gb1.brightbox.com/1.0/).
 
+
 For questions, you can always [open a new issue](/issues/new).
 
+
  - `accounts`
-    
+
      - `list`
      - `get`
      - `update`
      - `resetFtpPass`
-    
+
  - `api_clients`
-    
+
      - `list`
      - `create`
      - `get`
      - `update`
      - `delete`
      - `resetSecret`
-    
+
  - `cloud_ips`
-    
+
      - `list`
      - `create`
      - `get`
@@ -100,16 +109,16 @@ For questions, you can always [open a new issue](/issues/new).
      - `delete`
      - `map`
      - `unmap`
-    
+
  - `collaborations`
-    
+
      - `list`
      - `create`
      - `get`
      - `delete`
-    
+
  - `database_servers`
-    
+
      - `list`
      - `create`
      - `get`
@@ -118,9 +127,9 @@ For questions, you can always [open a new issue](/issues/new).
      - `snapshot`
      - `reset_password`
      - `lock_resource`
-    
+
  - `database_snapshots`
-    
+
      - `list`
      - `get`
      - `update`
@@ -128,30 +137,30 @@ For questions, you can always [open a new issue](/issues/new).
      - `snapshot`
      - `lock_resource`
      - `unlock_resource`
-    
+
  - `database_types`
-    
+
      - `list`
      - `get`
-    
+
  - `firewall_policies`
-    
+
      - `list`
      - `create`
      - `get`
      - `apply_to`
      - `remove`
      - `delete`
-    
+
  - `firewall_rules`
-    
+
      - `create`
      - `get`
      - `update`
      - `delete`
-    
+
  - `images`
-    
+
      - `list`
      - `create`
      - `get`
@@ -159,9 +168,9 @@ For questions, you can always [open a new issue](/issues/new).
      - `delete`
      - `lock_resource`
      - `unlock_resource`
-    
+
  - `load_balancers`
-    
+
      - `list`
      - `create`
      - `get`
@@ -172,9 +181,9 @@ For questions, you can always [open a new issue](/issues/new).
      - `remove_listeners`
      - `lock_resource`
      - `unlock_resource`
-    
+
  - `server_groups`
-    
+
      - `list`
      - `create`
      - `get`
@@ -183,14 +192,14 @@ For questions, you can always [open a new issue](/issues/new).
      - `remove_servers`
      - `move_servers`
      - `delete`
-    
+
  - `server_types`
-    
+
      - `list`
      - `get`
-    
+
  - `servers`
-    
+
      - `list`
      - `create`
      - `get`
@@ -204,34 +213,33 @@ For questions, you can always [open a new issue](/issues/new).
      - `snapshot`
      - `lock_resource`
      - `unlock_resource`
-    
+
  - `user_collaborations`
-    
+
      - `list`
      - `get`
      - `accept`
      - `reject`
      - `delete`
-    
+
  - `users`
-    
+
      - `list`
      - `get`
      - `update`
-    
+
  - `zones`
-    
+
      - `list`
      - `get`
-    
 
-## How to contribute
+
+
+## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
-## Where is this library used?
-If you are using this library in one of your projects, add it in this list. :sparkles:
 
-## License
+## :scroll: License
 
 [MIT][license] © [Ionică Bizău][website]
 
