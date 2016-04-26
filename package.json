@@ -1,6 +1,6 @@
 {
   "name": "brightbox",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A Node.JS module, which provides an object oriented wrapper for the Brightbox API.",
   "main": "lib/index.js",
   "keywords": [
@@ -263,5 +263,16 @@
         ]
       }
     ]
-  }
+  },
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "resources/",
+    "menu/",
+    "cli.js",
+    "index.js"
+  ]
 }
