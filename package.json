@@ -1,6 +1,6 @@
 {
   "name": "brightbox",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "A Node.JS module, which provides an object oriented wrapper for the Brightbox API.",
   "main": "lib/index.js",
   "keywords": [
@@ -8,7 +8,7 @@
     "api",
     "node"
   ],
-  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "author": "Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)",
   "license": "MIT",
   "directories": {
     "test": "test"
@@ -268,12 +268,11 @@
     "bin/",
     "app/",
     "lib/",
-    "build/",
     "dist/",
     "src/",
+    "scripts/",
     "resources/",
     "menu/",
-    "scripts/",
     "cli.js",
     "index.js"
   ]
