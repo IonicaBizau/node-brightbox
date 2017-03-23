@@ -42,6 +42,15 @@ Brightbox.users.list({}, function (err, users) {
 });
 ```
 
+## :question: Get Help
+
+There are few ways to get help:
+
+ 1. Please [post questions on Stack Overflow](https://stackoverflow.com/questions/ask). You can open issues with questions, as long you add a link to your Stack Overflow question.
+ 2. For bug reports and feature requests, open issues. :bug:
+ 3. For direct and quick help from me, you can [use Codementor](https://www.codementor.io/johnnyb). :rocket:
+
+
 ## :memo: Documentation
 
 
@@ -92,6 +101,7 @@ For questions, you can always [open a new issue](/issues/new).
      - `get`
      - `update`
      - `resetFtpPass`
+
  - `api_clients`
 
      - `list`
@@ -100,6 +110,7 @@ For questions, you can always [open a new issue](/issues/new).
      - `update`
      - `delete`
      - `resetSecret`
+
  - `cloud_ips`
 
      - `list`
@@ -109,12 +120,14 @@ For questions, you can always [open a new issue](/issues/new).
      - `delete`
      - `map`
      - `unmap`
+
  - `collaborations`
 
      - `list`
      - `create`
      - `get`
      - `delete`
+
  - `database_servers`
 
      - `list`
@@ -125,6 +138,7 @@ For questions, you can always [open a new issue](/issues/new).
      - `snapshot`
      - `reset_password`
      - `lock_resource`
+
  - `database_snapshots`
 
      - `list`
@@ -134,10 +148,12 @@ For questions, you can always [open a new issue](/issues/new).
      - `snapshot`
      - `lock_resource`
      - `unlock_resource`
+
  - `database_types`
 
      - `list`
      - `get`
+
  - `firewall_policies`
 
      - `list`
@@ -146,12 +162,14 @@ For questions, you can always [open a new issue](/issues/new).
      - `apply_to`
      - `remove`
      - `delete`
+
  - `firewall_rules`
 
      - `create`
      - `get`
      - `update`
      - `delete`
+
  - `images`
 
      - `list`
@@ -161,6 +179,7 @@ For questions, you can always [open a new issue](/issues/new).
      - `delete`
      - `lock_resource`
      - `unlock_resource`
+
  - `load_balancers`
 
      - `list`
@@ -173,6 +192,7 @@ For questions, you can always [open a new issue](/issues/new).
      - `remove_listeners`
      - `lock_resource`
      - `unlock_resource`
+
  - `server_groups`
 
      - `list`
@@ -183,10 +203,12 @@ For questions, you can always [open a new issue](/issues/new).
      - `remove_servers`
      - `move_servers`
      - `delete`
+
  - `server_types`
 
      - `list`
      - `get`
+
  - `servers`
 
      - `list`
@@ -202,6 +224,7 @@ For questions, you can always [open a new issue](/issues/new).
      - `snapshot`
      - `lock_resource`
      - `unlock_resource`
+
  - `user_collaborations`
 
      - `list`
@@ -209,15 +232,19 @@ For questions, you can always [open a new issue](/issues/new).
      - `accept`
      - `reject`
      - `delete`
+
  - `users`
 
      - `list`
      - `get`
      - `update`
+
  - `zones`
 
      - `list`
      - `get`
+
+
 
 ## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
